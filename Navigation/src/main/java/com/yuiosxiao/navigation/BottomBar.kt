@@ -105,6 +105,7 @@ class BottomBar: View {
 
     @JvmName("setCurrentIndex1")
     fun setCurrentIndex(position: Int) {
+        currentIndex = position
         switchFragment(position)
         invalidate()
     }

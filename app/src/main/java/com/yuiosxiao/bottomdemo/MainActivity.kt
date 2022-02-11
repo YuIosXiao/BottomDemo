@@ -24,8 +24,5 @@ class MainActivity : AppCompatActivity() {
         bottom_bar.setClickListen {
             println(it)
         }
-
-        bottom_bar.currentIndex = 1
-        bottom_bar.setCurrentIndex(1)
     }
 }
