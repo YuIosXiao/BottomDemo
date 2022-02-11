@@ -106,6 +106,7 @@ class BottomBar: View {
     @JvmName("setCurrentIndex1")
     fun setCurrentIndex(position: Int) {
         switchFragment(position)
+        invalidate()
     }
 
     fun addItem(fragmentClss: Class<*>,
@@ -148,7 +149,7 @@ class BottomBar: View {
             }
             fragmentList.add(fragment!!)
         }
-        currentIndex = firstCheckedIndex
+                                                                                currentIndex = firstCheckedIndex
         switchFragment(currentIndex)
 
         invalidate()
