@@ -103,6 +103,11 @@ class BottomBar: View {
         return this
     }
 
+    @JvmName("setCurrentIndex1")
+    fun setCurrentIndex(position: Int) {
+        switchFragment(position)
+    }
+
     fun addItem(fragmentClss: Class<*>,
                 title: String,
                 iconResBefore: Int,

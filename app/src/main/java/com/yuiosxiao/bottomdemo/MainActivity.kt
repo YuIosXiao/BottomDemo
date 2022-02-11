@@ -19,10 +19,13 @@ class MainActivity : AppCompatActivity() {
             .setIconWidth(22)
             .setTitleBeforeAndAfterColor("#999999", "#666666")
             .addItem(FragmentA::class.java, "首页", R.mipmap.tab_home_unselect, R.mipmap.tab_home_select)
-            .addItem(FragmentA::class.java, "我的", R.mipmap.tab_circle_unselect, R.mipmap.tab_circle_select)
+            .addItem(FragmentB::class.java, "我的", R.mipmap.tab_circle_unselect, R.mipmap.tab_circle_select)
             .build()
         bottom_bar.setClickListen {
             println(it)
         }
+
+        bottom_bar.currentIndex = 1
+        bottom_bar.setCurrentIndex(1)
     }
 }
